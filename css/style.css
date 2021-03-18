@@ -5,8 +5,11 @@
     border-radius: 30px;
     background-color: bisque;
     border: 3px solid black;
-    text-transform: uppercase;
     position: relative;
+}
+
+.coontainer h1{
+    text-transform: uppercase;
 }
 
 

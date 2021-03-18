@@ -1,6 +1,100 @@
 .container{
     width: 1000px;
-    height: 800px;
-    margin: auto;
+    margin:100px auto;
     text-align: center;
+    border-radius: 30px;
+    background-color: bisque;
+    border: 3px solid black;
+    text-transform: uppercase;
+    position: relative;
+}
+
+
+#password{
+    width: 80%;
+    height:70px;
+    background-color: white;
+    border-radius: 30px;
+    border: 3px solid black;
+    margin:20px auto;
+    font-size: 50px;
+}
+
+.move-top-figure {
+    position: absolute;
+    top: -3px;
+    left: 10%;
+    background: bisque;
+    width: 60px;
+    height: 20px;
+    animation: round-top-figure 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes round-top-figure{
+    0% {
+        left: 10%;
+        top: -3px;
+    }
+    30% {
+        left: calc(100% - 57px);
+        top: -3px;
+    }
+    45% {
+        left: calc(100% - 57px);
+        top: calc(100% - 17px);
+    }
+    75% {
+        left: 0;
+        top: calc(100% - 17px);
+    }
+    90% {
+        left: -3px;
+        top: -3px;
+    }
+    100% {
+        left: 10%;
+        top: -3px;
+    }
+}
+
+
+.move-bottom-figure {
+    position: absolute;
+    bottom: -3px;
+    right: 10%;
+    background: bisque;
+    width: 60px;
+    height: 20px;
+    animation: round-bottom-figure 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes round-bottom-figure{
+    0% {
+        right: 10%;
+        bottom: -3px;
+    }
+    30% {
+        right: calc(100% - 57px);
+        bottom: -3px;
+    }
+    45% {
+        right: calc(100% - 57px);
+        bottom: calc(100% - 17px);
+    }
+    75% {
+        right: 0;
+        bottom: calc(100% - 17px);
+    }
+    90% {
+        right: -3px;
+        bottom: -3px;
+    }
+    100% {
+        right: 10%;
+        bottom: -3px;
+    }
 }
